@@ -1,6 +1,6 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import AddButton from './AddButton';
 
 const styles = StyleSheet.create({
 	container: {
@@ -15,7 +15,7 @@ const App = () =>
 	<View style={ styles.container }>
 		<Text>Open up App.js to start working on your app!</Text>
 		{/* eslint-disable-next-line react/style-prop-object */}
-		<StatusBar style="auto"/>
+		<AddButton/>
 	</View>;
 
 export default App;

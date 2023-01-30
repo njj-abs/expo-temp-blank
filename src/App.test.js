@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render } from '@testing-library/react-native';
+import renderer from 'react-test-renderer';
 import App from './App';
 import { Text } from 'react-native';
 import * as AddButton from './AddButton';
@@ -7,7 +7,7 @@ import * as AddButton from './AddButton';
 test('App', () => {
 	jest.spyOn(AddButton, 'default').mockReturnValue(<Text title="Add"/>);
 
-	const result = render(<App/>).toJSON();
+	const result = renderer.create(<App/>).toJSON();
 
 	expect(result.children[0].children[0])
 		.toEqual('Open up App.js to start working on your app!');

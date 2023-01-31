@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import AddButton from './AddButton';
+import AddButton from '@components/AddButton';
 
 const styles = StyleSheet.create({
 	container: {

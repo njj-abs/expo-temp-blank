@@ -2,7 +2,7 @@ import * as React from 'react';
 import renderer from 'react-test-renderer';
 import App from './App';
 import { Text } from 'react-native';
-import * as AddButton from './AddButton';
+import * as AddButton from './components/AddButton';
 
 test('App', () => {
 	jest.spyOn(AddButton, 'default').mockReturnValue(<Text title="Add"/>);
